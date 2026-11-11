@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="kn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Harsha Setu | ಹರ್ಷ ಸೇತು - Aland Assembly</title>
+  <!-- Tailwind CSS CDN for modern mobile-first styling -->
+  <script src="https://tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cloudflare.com">
+  <style>
+    @import url('https://googleapis.com');
+    body {
+      font-family: 'Poppins', 'Noto Sans Kannada', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+
+  <!-- TOP HEADER -->
+  <header class="bg-gradient-to-r from-orange-600 via-orange-500 to-amber-600 text-white shadow-md sticky top-0 z-50">
+    <div class="max-w-4xl mx-auto px-4 py-3 flex items-center justify-between">
+      <div class="flex items-center space-x-3">
+        <div class="w-10 h-10 rounded-full bg-white text-orange-600 flex items-center justify-center font-bold text-xl shadow">
+          <i class="fa-solid fa-handshake-angle"></i>
+        </div>
+        <div>
+          <h1 class="text-lg md:text-xl font-bold leading-tight" id="headerTitle">ಹರ್ಷ ಸೇತು (Harsha Setu)</h1>
+          <p class="text-xs text-orange-100" id="headerSub">ಆಳಂದ ಮತಕ್ಷೇತ್ರ ನಾಗರಿಕ ಸೇವಾ ವೇದಿಕೆ</p>
+        </div>
+      </div>
+      <!-- Language Toggle -->
+      <button onclick="toggleLanguage()" class="bg-white/20 hover:bg-white/30 border border-white/40 px-3 py-1.5 rounded-full text-xs font-semibold backdrop-blur-sm transition">
+        <i class="fa-solid fa-language mr-1"></i> <span id="langBtnText">English</span>
+      </button>
+    </div>
+  </header>
+
+  <!-- LEADER BANNER / DEDICATION -->
+  <section class="bg-orange-50 border-b border-orange-200 py-4 px-4 text-center">
+    <div class="max-w-4xl mx-auto flex flex-col sm:flex-row items-center justify-center gap-3">
+      <span class="inline-flex items-center justify-center w-12 h-12 rounded-full bg-orange-100 text-orange-700 text-xl font-bold">
+        <i class="fa-solid fa-user-tie"></i>
+      </span>
+      <div>
+        <p class="text-xs uppercase tracking-wide text-orange-700 font-semibold" id="bannerTag">ಆಳಂದ ನಾಗರಿಕರ ಸೇವೆಗಾಗಿ</p>
+        <h2 class="text-base sm:text-lg font-bold text-slate-900" id="leaderName">ಶ್ರೀ ಹರ್ಷಾನಂದ ಎಸ್. ಗುತ್ತೇದಾರ ನೇತೃತ್ವದಲ್ಲಿ</h2>
+        <p class="text-xs text-slate-600" id="bannerNote">ಕೇಂದ್ರ ಮತ್ತು ರಾಜ್ಯ ಸರ್ಕಾರದ ಪ್ರಮುಖ ಸೌಲಭ್ಯಗಳ ಪರಿಶೀಲನಾ ಪೋರ್ಟಲ್</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN ACTION HUB -->
+  <main class="max-w-4xl mx-auto px-4 py-6 flex-grow w-full">
+    <div class="mb-4">
+      <h3 class="text-base sm:text-lg font-bold text-slate-800 flex items-center gap-2" id="portalSectionTitle">
+        <i class="fa-solid fa-cubes-stacked text-orange-600"></i> ಪ್ರಮುಖ ಯೋಜನೆಗಳ ಟ್ರ್ಯಾಕರ್
+      </h3>
+      <p class="text-xs text-slate-500" id="portalSectionSub">ಅಧಿಕೃತ ಸರ್ಕಾರಿ ವೆಬ್‌ಸೈಟ್‌ಗಳಿಗೆ ನೇರ ಸಂಪರ್ಕ</p>
+    </div>
+
+    <!-- CARDS GRID -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+      <!-- 1. PM-KISAN -->
+      <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-3">
+            <span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-emerald-100 text-emerald-800">
+              <i class="fa-solid fa-wheat-awn mr-1"></i> ಕೃಷಿ ಇಲಾಖೆ
+            </span>
+            <i class="fa-solid fa-circle-check text-emerald-500"></i>
+          </div>
+          <h4 class="text-base font-bold text-slate-900 mb-1" id="pmKisanTitle">ಪಿ.ಎಂ ಕಿಸಾನ್ ಸ್ಟೇಟಸ್ ಟ್ರ್ಯಾಕರ್</h4>
+          <p class="text-xs text-slate-600 mb-3" id="pmKisanDesc">ನಿಮ್ಮ ಕಂತಿನ ಜಮಾ ಹಣ ಮತ್ತು ಫಲಾನುಭವಿ ಸ್ಥಿತಿಯನ್ನು ನೋಂದಣಿ ಸಂಖ್ಯೆ ಅಥವಾ ಮೊಬೈಲ್ ಮೂಲಕ ತಿಳಿಯಿರಿ.</p>
+          <div class="bg-slate-50 p-2.5 rounded-lg text-[11px] text-slate-500 mb-4 border border-slate-100">
+            <strong class="text-slate-700">ಅಗತ್ಯ ದಾಖಲೆ:</strong> ನೋಂದಣಿ ಸಂಖ್ಯೆ (Registration No) ಮತ್ತು ಒಟಿಪಿ.
+          </div>
+        </div>
+        <a href="https://pmkisan.gov.in" target="_blank" rel="noopener noreferrer" 
+           class="w-full inline-flex items-center justify-center gap-2 bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-xs py-2.5 px-4 rounded-lg shadow-sm transition">
+          <span>ಸ್ಥಿತಿ ಪರಿಶೀಲಿಸಿ (PM-KISAN)</span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+        </a>
+      </div>
+
+      <!-- 2. PMAY-G (KALABURAGI NIC LIST) -->
+      <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-3">
+            <span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-blue-100 text-blue-800">
+              <i class="fa-solid fa-house-chimney mr-1"></i> ಗ್ರಾಮೀಣ ವಸತಿ
+            </span>
+            <i class="fa-solid fa-file-pdf text-blue-500"></i>
+          </div>
+          <h4 class="text-base font-bold text-slate-900 mb-1" id="pmayGTitle">ಕಲಬುರಗಿ PMAY-G ತಾತ್ಕಾಲಿಕ ಪಟ್ಟಿ 2024-25</h4>
+          <p class="text-xs text-slate-600 mb-3" id="pmayGDesc">ಆಳಂದ ತಾಲೂಕಿನ ಗ್ರಾಮ ಪಂಚಾಯತಿವಾರು ಪ್ರಧಾನಮಂತ್ರಿ ಆವಾಸ್ ಗ್ರಾಮೀಣ ಫಲಾನುಭವಿ ಪಟ್ಟಿಯನ್ನು ಪರಿಶೀಲಿಸಿ.</p>
+          <div class="bg-slate-50 p-2.5 rounded-lg text-[11px] text-slate-500 mb-4 border border-slate-100">
+            <strong class="text-slate-700">ಮೂಲ:</strong> ಕಲಬುರಗಿ ಜಿಲ್ಲಾ ಪಂಚಾಯತ್ ಅಧಿಕೃತ NIC ಪೋರ್ಟಲ್.
+          </div>
+        </div>
+        <a href="https://kalaburagi.nic.in" target="_blank" rel="noopener noreferrer" 
+           class="w-full inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white font-semibold text-xs py-2.5 px-4 rounded-lg shadow-sm transition">
+          <span>ಫಲಾನುಭವಿ ಪಟ್ಟಿ ವೀಕ್ಷಿಸಿ (PMAY-G)</span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+        </a>
+      </div>
+
+      <!-- 3. PMAY-URBAN TRACKER -->
+      <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-3">
+            <span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-indigo-100 text-indigo-800">
+              <i class="fa-solid fa-city mr-1"></i> ನಗರ ವಸತಿ
+            </span>
+            <i class="fa-solid fa-building text-indigo-500"></i>
+          </div>
+          <h4 class="text-base font-bold text-slate-900 mb-1" id="pmayUTitle">PMAY-ಅರ್ಬನ್ ಅರ್ಜಿ ಸ್ಥಿತಿ ಟ್ರ್ಯಾಕರ್</h4>
+          <p class="text-xs text-slate-600 mb-3" id="pmayUDesc">ಆಳಂದ ಪುರಸಭೆ ಹಾಗೂ ನಗರ ವ್ಯಾಪ್ತಿಯ ಪ್ರಧಾನಮಂತ್ರಿ ಆವಾಸ್ ಯೋಜನೆ ಅರ್ಜಿ ಸ್ಥಿತಿ ವೀಕ್ಷಿಸಿ.</p>
+          <div class="bg-slate-50 p-2.5 rounded-lg text-[11px] text-slate-500 mb-4 border border-slate-100">
+            <strong class="text-slate-700">ವಿಧಾನ:</strong> Assessment ID ಅಥವಾ ಹೆಸರು, ತಂದೆಯ ಹೆಸರು ಮತ್ತು ಮೊಬೈಲ್ ಸಂಖ್ಯೆ.
+          </div>
+        </div>
+        <a href="https://pmaymis.gov.in" target="_blank" rel="noopener noreferrer" 
+           class="w-full inline-flex items-center justify-center gap-2 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold text-xs py-2.5 px-4 rounded-lg shadow-sm transition">
+          <span>ಅರ್ಜಿ ಸ್ಥಿತಿ ಟ್ರ್ಯಾಕ್ ಮಾಡಿ</span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+        </a>
+      </div>
+
+      <!-- 4. eJALSHAKTI JJM -->
+      <div class="bg-white border border-slate-200 rounded-xl p-5 shadow-sm hover:shadow-md transition flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between mb-3">
+            <span class="px-2.5 py-1 rounded-full text-xs font-semibold bg-cyan-100 text-cyan-800">
+              <i class="fa-solid fa-faucet-drip mr-1"></i> ಕುಡಿಯುವ ನೀರು
+            </span>
+            <i class="fa-solid fa-droplet text-cyan-500"></i>
+          </div>
+          <h4 class="text-base font-bold text-slate-900 mb-1" id="jjmTitle">ಜಲ ಜೀವನ್ ಮಿಷನ್ (eJalShakti)</h4>
+          <p class="text-xs text-slate-600 mb-3" id="jjmDesc">ನಿಮ್ಮ ಹಳ್ಳಿಯ ನಲ್ಲಿ ನೀರು ಸಂಪರ್ಕ ಪ್ರಗತಿ ಹಾಗೂ ನೀರಿನ ಶುದ್ಧತೆ ವರದಿಯನ್ನು ನೇರವಾಗಿ ಪರಿಶೀಲಿಸಿ.</p>
+          <div class="bg-slate-50 p-2.5 rounded-lg text-[11px] text-slate-500 mb-4 border border-slate-100">
+            <strong class="text-slate-700">ವರದಿ:</strong> ತಾಲೂಕು ಮತ್ತು ಗ್ರಾಮವಾರು ಲೈವ್ ಡ್ಯಾಶ್‌ಬೋರ್ಡ್.
+          </div>
+        </div>
+        <a href="https://ejalshakti.gov.in" target="_blank" rel="noopener noreferrer" 
+           class="w-full inline-flex items-center justify-center gap-2 bg-cyan-700 hover:bg-cyan-800 text-white font-semibold text-xs py-2.5 px-4 rounded-lg shadow-sm transition">
+          <span>ಗ್ರಾಮ ಪ್ರಗತಿ ನೋಡಿ (JJM)</span>
+          <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
+        </a>
+      </div>
+
+    </div>
+
+    <!-- CONSTITUENCY HELPLINE INFO -->
+    <div class="mt-8 bg-amber-50 border border-amber-200 rounded-xl p-4 text-center">
+      <h4 class="text-sm font-bold text-amber-900 mb-1" id="helpTitle">ಸಹಾಯ ಮತ್ತು ಮಾರ್ಗದರ್ಶನ</h4>
+      <p class="text-xs text-amber-800 mb-2" id="helpDesc">ಆನ್‌ಲೈನ್ ಪೋರ್ಟಲ್‌ನಲ್ಲಿ ತೊಂದರೆ ಉಂಟಾದರೆ ನಿಮ್ಮ ಸಮೀಪದ ಗ್ರಾಮ ಒನ್ (Grama One) ಅಥವಾ ನಾಡಕಚೇರಿ ಕೇಂದ್ರವನ್ನು ಸಂಪರ್ಕಿಸಿ.</p>
+      <div class="inline-flex items-center gap-2 text-xs font-semibold text-amber-950 bg-amber-200/60 px-3 py-1.5 rounded-full">
+        <i class="fa-solid fa-location-dot"></i> ಆಳಂದ ತಾಲೂಕು, ಕಲಬುರಗಿ ಜಿಲ್ಲೆ
+      </div>
+    </div>
+  </main>
+
+  <!-- DISCLAIMER & FOOTER -->
